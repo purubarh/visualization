@@ -8,25 +8,53 @@
 - Using Python and one other data visualization software (Excel or free alternative, Tableau Public, any other tool you prefer), create two distinct visualizations from your dataset of choice.  
 - For each visualization, describe and justify: 
     > What software did you use to create your data visualization?
+         - Excel & Python matplotlib
+         - Excel graph - assignment3_excel_graph.png
+         Data - https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/d4d64b0e-2945-4c92-960e-f0103ad48b02/resource/9a800c92-0362-4cee-8232-7374596b6a43/download/TTC%20LRT%20Delays.csv"
+         - Line Graph
+         - Bar Graph
 
     > Who is your intended audience? 
+        - General Public TTC User
+        - City Planned - TTC Authorities
     
     > What information or message are you trying to convey with your visualization? 
+        - Trends in daily LRT delays over time
+        - Magnitude of delay
     
     > What aspects of design did you consider when making your visualization? How did you apply them? With what elements of your plots? 
+        - Consistence: Reproducible and uniform style
+        - Accessibility: Make Visualisation accessible by color choices and x-axis label rotation
+        - Clarity: Avoid Overlapping elements by x-axis label rotation
+        - Interpretability - Adding Title, Axis labels and grid lines
+
     
     > How did you ensure that your data visualizations are reproducible? If the tool you used to make your data visualization is not reproducible, how will this impact your data visualization? 
+     - Used Fixed Data Source - Direct URL
+     - Sort Data before plotting - Prevents Random ordering differences
+     - Fix plot style for Consistency - plt.style.use('seaborn-v0_8')
+     - Fix Figure size - plt.figure(figsize=(12,6)).Without this, size may vary depending on environment
     
-    > How did you ensure that your data visualization is accessible?  
+    > How did you ensure that your data visualization is accessible? 
+        - Color choices and plot style use of plt.style.use('seaborn-v0_8-colorblind') 
     
     > Who are the individuals and communities who might be impacted by your visualization?  
+        - General Public TTC User
+        - City Planned - TTC Authorities
     
     > How did you choose which features of your chosen dataset to include or exclude from your visualization? 
+        - Included features are Date & Min Delay to visualize the daily TTC Delay
+        - Excluded Features - Intention of visualization to display the delay trend over time so excluded rest of the feature like Station and delay code.  
     
     > What ‘underwater labour’ contributed to your final data visualization product?
+     - Data Cleaning
+     - Data Aggregation
+     - Reproducibility
+     - Accessibility Consideration
 
 - This assignment is intentionally open-ended - you are free to create static or dynamic data visualizations, maps, or whatever form of data visualization you think best communicates your information to your audience of choice! 
 - Total word count should not exceed **(as a maximum) 1000 words** 
+ - Visualization graph generated using Python Code are easy to reproducible and easy to incorporate accessibility and interoperability. Python library provided best approach and flexibility to adjust the changes as needed. We can use live data from web to visualize however excel depends on the data extract.
  
 ### Why am I doing this assignment?:  
 - This ongoing assignment ensures active participation in the course, and assesses the learning outcomes: 
